@@ -6,7 +6,7 @@ if ("geolocation" in navigator) {
             center: latlng,
             mapTypeId: google.maps.MapTypeId.TERRAIN,
             disableDefaultUI: true
-        }
+        };
         var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         var marker = new google.maps.Marker({
