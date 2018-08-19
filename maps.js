@@ -4,8 +4,11 @@ if ("geolocation" in navigator) {
         var myOptions = {
             zoom: 8,
             center: latlng,
-            mapTypeId: google.maps.MapTypeId.TERRAIN,
-            disableDefaultUI: true
+            mapTypeId: google.maps.MapTypeId.SATELLITE,
+            disableDefaultUI: true,
+            zoomControl: true
+                // mapTypeControl: true,
+                // scaleControl: true
         };
         var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
